@@ -1,0 +1,120 @@
+:root{
+    --color1: #F4D04E; /* Yellow */
+    --color2: #111111; /* Gray-950 */
+    --color3: #686868; /* Gray-500 */
+    --color4: #FFFFFF; /* White */
+
+    --font-size-figtree-extra-bold: 24px; /* Font-size extra bold */
+    --font-size-figtree-medium-one: 16px; /* Font-size medium one */
+    --font-size-figtree-medium-two: 14px; /* Font-size medium two */
+    --font-size-figtree-medium-extra-bold: 14px; /* Font-size medium extra bold */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+body{
+    background-color: var(--color1);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-- Card One --*/
+
+.card-one{
+    width: 384px;
+    height: auto;
+    background-color: var(--color4);
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid var(--color2);
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+}
+
+/*-- Image Illustrator --*/
+.card-one .illustrator{
+    border-radius: 10px;
+}
+
+.learn, .pub, .foundation, .contenu, .profil{
+    margin: 17px 0px;
+}
+
+/*-- learning --*/
+
+.learn{
+    font-size: var(--font-size-figtree-medium-extra-bold);
+    color: var(--color2);
+    font-weight: 800;
+    background-color: var(--color1);
+    padding: 4px 12px;
+    width: 82px;
+    height: 29px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/*-- published --*/
+.pub{
+    font-size: var(--font-size-figtree-medium-two);
+    line-height: 150%;
+}
+
+/*-- Foundation --*/
+
+.foundation{
+    font-size: var(--font-size-figtree-extra-bold);
+    font-weight: 800;
+    line-height: 150%;
+}
+
+/*-- Contenu --*/
+.contenu{
+    font-size: var(--font-size-figtree-medium-one);
+    color: var(--color3);
+    line-height: 150%;
+}
+
+/*-- profil --*/
+.profil{
+    display: flex;
+    align-items: center;
+}
+
+.profil .name{
+    font-size: var(--font-size-figtree-medium-extra-bold);
+    font-weight: 800;
+    padding: 0px 10px;
+}
+
+/* Mobile 375px */
+@media (max-width: 375px) {
+    .card-one {
+        width: calc(100% - 48px);
+        height: auto;
+        margin: 0 24px;
+    }
+
+    .card-one .illustrator {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-one .contenu{
+        font-size: var(--font-size-figtree-medium-two);
+        margin-bottom: 20px;
+    }
+    .card-one .foundation{
+        font-size: 20px;
+    } 
+}
